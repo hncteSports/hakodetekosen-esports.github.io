@@ -9,6 +9,10 @@ img{
     margin: 0 auto;
 }
 
+h2{
+    text-aline: center;
+}
+
 .footer{
     color: #dddddd;
     background-color: black;
