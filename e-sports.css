@@ -12,7 +12,7 @@
 }
 
 .main-contents{
-    max-width: 700px;
+    width: 80%;
     padding: 70px;
     background-color: #ffffff;
     
@@ -29,6 +29,7 @@
     padding: 24px;
     text-align: center;
     background-color: #ffffff;
+    width: 50%
 }
 
 body{
