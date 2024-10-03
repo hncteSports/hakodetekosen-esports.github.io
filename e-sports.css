@@ -25,8 +25,7 @@
 }
 
 .sidebar{
-    order: 2;
-    max-width: 300px;
+    order: 1;
     padding: 24px;
     text-align: center;
     background-color: #ffffff;
@@ -165,7 +164,7 @@ body{
 
 @media screen and (max-width: 768px) {
 
-        .continer {
+        .container {
             flex-direction: column; /* 縦に並べる */
             align-items: center; /* 中央揃え */
             width: 100%; /* 幅を100%に */
