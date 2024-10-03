@@ -165,7 +165,7 @@ body{
 
 @media screen and (max-width: 768px) {
 
-        .content {
+        .continer {
             flex-direction: column; /* 縦に並べる */
             align-items: center; /* 中央揃え */
             width: 100%; /* 幅を100%に */
