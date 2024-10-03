@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="youkou.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3BOX大会要項</title>
+</head>
+<body>
+
+    <div class="content">
+    <h1>函館e-sports愛好会主催 3box内オンラインAPEX大会<br>参加応募フォーム</h1>
+
+    <h2>以下の大会規約と大会ルールを一読いただき、了承及び遵守できることを確認のうえ、チェックを入れて大会フォームより参加申し込みをしてください。</h2>
+    <h2>参加フォームへの回答をを行った方は規約とルールを了承したものとみなします。</h2>
+
+    <table>
+    <td><label><input type="checkbox" id="checkbox1"><a href="#">大会規約</a> </label><br></td>
+    <td><label><input type="checkbox" id="checkbox2"><a href="rulebook.html">大会ルール</a></label><br></td>
+    </table>
+
+    <button id="navigateButton" onclick="navigate()">大会参加フォームへ</button>
+
+    <script>
+        // チェックボックスとボタンの要素を取得
+        const checkbox1 = document.getElementById('checkbox1');
+        const checkbox2 = document.getElementById('checkbox2');
+        const navigateButton = document.getElementById('navigateButton');
+
+        // チェックボックスの状態をチェックし、ボタンの表示/非表示を制御
+        function checkCheckboxes() {
+            if (checkbox1.checked && checkbox2.checked) {
+                navigateButton.style.display = 'inline';
+            } else {
+                navigateButton.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            checkCheckboxes(); // 初期状態を確認
+        });
+
+        // チェックボックスの状態が変わるたびにcheckCheckboxes関数を呼び出す
+        checkbox1.addEventListener('change', checkCheckboxes);
+        checkbox2.addEventListener('change', checkCheckboxes);
+
+        // ボタンがクリックされたときにYouTubeに移動する
+        function navigate() {
+            window.location.href = "https://docs.google.com/forms/d/1aRsC6mu1b5O9TZUjFuzlLAgx6AFaoCl5lXC_fCeZOR4/prefill";
+        }
+    </script>
+
+
+</div>
+    <footer class="footer">
+        <div class="footer-text">
+        <p>©2021- 函館工業高等専門学校 e-sports愛好会</p>
+        <figure>
+            <img alt="高専ロゴ" src="esp.img/k.rogo.jpg" width="175" height="150"/>
+            <img alt="e-sportsロゴ" src="esp.img/e.rogo.jpg" width="150"/>
+        </figure>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

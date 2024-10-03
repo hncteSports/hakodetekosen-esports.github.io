@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+html, body {
+    height: 100%; /* 必要な高さを確保するため */
+    margin: 0;
+}
+
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background-color: #dddddd;
+
+}
+
+.catch {
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start; /* 左揃え */
+    max-width: 60px;
+    color: orange;
+}
+
+.maji{
+    color: red;
+}
+
+.ca{
+    width: fit-content;
+	margin: 0 auto;
+    background-color: #dddddd;
+    max-width: 1000px;
+    padding: 50px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.hako{
+    color: blue;
+}
+
+.catch::before {
+    content: "函 "; /* 追加するコンテンツ */
+    color: blue;    /* コンテンツの色 */
+    font-size: 1.5em; /* フォントサイズの調整 */
+}
+
+.pp{
+    line-height: 0;
+    color: #2f4f4f;
+    font-size: 18px;
+}
+
+.footer{
+    color: #dddddd;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* フッターの上にスペースを追加 */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.suraido{
+    background-color: white;
+    /*display: flex;*/
+    margin: 100px 300px;
+}
+
+.slid{
+    margin: auto;
+    scale: 150%;
+}
+
+.slide-pic{
+    max-width: 100%;
+    height: 400px;
+    margin: auto;
+    
+}
+
+.title{
+    font-size: 20px;
+}
+
+.dai{
+    font-size: 26px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.annnai{
+    text-align: center;
+}
+
+h4{
+    font-size: 26px;
+}
+
+.SNS {
+    font-size: 30px;
+}
+
+.okuru {
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.bosyu{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+
+.ee{
+    color: red;
+    text-align: center;
+}
+
+.b3{
+    color: green;
+    font-size: 75px;
+}
+
+
+.content {
+    display: flex;
+        flex-direction: column;  
+        align-items: center; 
+        justify-content: center; 
+        max-width: 1200px;  
+        margin: 0 auto; /* 中央揃え */
+        padding: 20px; /* 必要に応じて調整 */
+} 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* スマホの余白を減らす */
+        max-width: 1000px;
+        align-items: center;     /* 垂直方向の中央揃え */
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px; /* 最大幅を設定 */
+        margin: 0;
+    }
+
+    /*.content{}*/
+
+    h1 {
+        font-size: 32px; /* タイトルサイズを小さくする */
+    }
+
+    h2 {
+        font-size: 24px; /* 見出しのサイズを小さくする */
+    }
+
+    h3 {
+        font-size: 28px; /* 小見出しのサイズを小さくする */
+    }
+
+    .catch {
+        max-width: 90%; /* キャッチフレーズの幅を広げる */
+        font-size: 18px; /* フォントサイズを小さくする */
+    }
+
+    .title {
+        font-size: 18px; /* タイトルのフォントサイズを調整 */
+    }
+
+    .bosyu {
+        font-size: 30px; /* 募集タイトルのサイズを調整 */
+    }
+
+    .footer {
+        font-size: 14px; /* フッターのフォントサイズを小さくする */
+    }
+
+    h1 {
+        font-size: 30px; /* スマホ用にサイズ調整 */
+    }
+    h2, h3, h4 {
+        font-size: 24px; /* 他の見出しサイズ調整 */
+    }
+
+    li,p{
+        font-size: 20px;
+    }
+
+}
