@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 60px;
+    grid-template-areas: "areaE areaE""areaD areaF""areaG areaG";
+    flex-direction: row;
+}
+
+.main-contents{
+    max-width: 700px;
+    padding: 70px;
+    background-color: #ffffff;
+    
+}
+
+.syoukai{
+    background-color: #ffffff;
+    margin: auto;
+    padding: 24px;
+}
+
+.sidebar{
+    order: 2;
+    max-width: 300px;
+    padding: 24px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background-color: #dddddd;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.home-logo{
+    max-width: 300px;
+    text-align: right;
+}
+
+.header{
+    max-width: 952px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 12px 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-spase{
+    text-align: center;
+}
+
+.site-title{
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.3em;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.contents-title{
+    text-align: center;
+    color: #613437;
+    font-size: 20px;
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contents-title::before,
+.contents-title::after{
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #e2d4ba;
+}
+
+.contents-title::before{
+    margin-right: Irem;
+}
+
+.contents-title::after{
+    margin-left: Irem;
+}
+
+.footer{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer > p {
+    margin: 0 24px;
+}
+
+.topic-area {
+   /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.global-nav{
+    width: 700px;
+}
+
+.global-nav ul{
+    font-size: 14px;
+    display: flex;
+    margin: 0;
+}
+
+.global-nav li{
+    font-weight: normal;
+    flex-grow: 1;
+    padding: 4px;
+    list-style: none;
+    text-align: center;
+    border-left: solid 1px #936458;
+    background-color: #ffffff;
+}
+
+.global-nav a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.global-nav li:hover{
+    transition: background-color 0.5s;
+    background-color: #af7a6d;
+}
+
+  .footer{
+    color: #dddddd;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* フッターの上にスペースを追加 */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.esp-logo{
+    padding: 24px;
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+
+        .content {
+            flex-direction: column; /* 縦に並べる */
+            align-items: center; /* 中央揃え */
+            width: 100%; /* 幅を100%に */
+            padding: 0; /* パディングをリセット */
+        }
+    
+        .main-contents {
+            width: 100%; /* 幅を100%に */
+            max-width: none; /* 最大幅を解除 */
+            padding: 24px; /* パディング */
+            background-color: #ffffff;
+            margin: 0; /* マージンをリセット */
+        }
+    
+        .sidebar {
+            order: 1; /* サイドバーをメインコンテンツの下に持ってくる */
+            width: 100%; /* 幅を100%に */
+            max-width: none; /* 最大幅を解除 */
+            padding: 24px; /* パディング */
+            background-color: #ffffff;
+            margin: 0; /* マージンをリセット */
+        }
+    
+
+    /* 各h2要素も中央に揃える */
+    h2 {
+        text-align: center; /* テキストを中央に */
+    }
+
+    .footer {
+        text-align: center; /* フッター内のテキストを中央に */
+    }
+    
+    .global-nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* ヘッダーとロゴを適切なサイズに変更 */
+    .esp-logo img {
+        width: 100px; /* ロゴのサイズ調整 */
+        height: auto;
+    }
+
+    /* フッター内の画像を小さくする */
+    .footer img {
+        height: 100px;
+        width: auto;
+    }
+
+}
+
