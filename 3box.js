@@ -1,4 +1,4 @@
-const pics_src = ["esp.img/apex.jpg","esp.img/tank.jpg","esp.img/tetolis.jpg"];
+const pics_src = ["esp.img/keihin.png"];
 let num = -1;
 
 function slideshow_timer(){
