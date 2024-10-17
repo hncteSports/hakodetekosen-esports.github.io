@@ -8,7 +8,10 @@ html, body {
 body{
     font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
     background-color: #dddddd;
+}
 
+.sina{
+    font-size: 28px;
 }
 
 .catch {
@@ -17,6 +20,18 @@ body{
     align-items: flex-start; /* 左揃え */
     max-width: 60px;
     color: orange;
+}
+
+.keee{
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start; /* 左揃え */
+    max-width: 700px;
+}
+
+.kesya{
+    text-align: center;
+    padding: auto;
 }
 
 .maji{
