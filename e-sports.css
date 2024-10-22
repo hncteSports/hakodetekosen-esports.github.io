@@ -2,13 +2,31 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1000px;
     margin: auto ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 60px;
     grid-template-areas: "areaE areaE""areaD areaF""areaG areaG";
     flex-direction: row;
+}
+
+.oosirase{
+    border: 3px dashed #888888;
+    border-radius: 8px;
+    background-color: aquamarine;
+    width: 400px;
+    margin: 24px auto 48px;
+    padding: 20px;
+}
+
+.side{
+    border: 3px double #888888;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 200px;
+    margin: auto;
+    padding: 0px;
 }
 
 .main-contents{
@@ -29,7 +47,7 @@
     padding: 24px;
     text-align: center;
     background-color: #ffffff;
-    width: 50%
+    width: 50%;
 }
 
 body{
