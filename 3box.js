@@ -1,8 +1,8 @@
-const pics_src = ["esp.img/keihin.png"];
+const pics_src = ["esp.img/keihin.png","esp.img/nasi-san.png"];
 let num = -1;
 
 function slideshow_timer(){
-    if (num === 2){
+    if (num === 1){
         num = 0;
     }
     else{
