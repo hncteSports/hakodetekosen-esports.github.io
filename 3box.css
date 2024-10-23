@@ -59,19 +59,34 @@ h1{
     font-size: 70px;
 }
 
-.bu{
-    font-size: 65px;
-    color: #8B008B;
+.nasi-{
+    text-align: center;
+    font-size: 25px;
 }
 
-.catch::before {
-    content: "函 "; /* 追加するコンテンツ */
-    color: blue;    /* コンテンツの色 */
-    font-size: 1.5em; /* フォントサイズの調整 */
+.bu{
+    font-size: 65px;
+    border: 3px dashed #888888;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 600px;
+    margin: 24px auto 48px;
+    padding: 20px;
+    text-align: center;
+}
+
+.bui{
+    font-size: 56px;
+    border: 3px solid #888888;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    width: 500px;
+    margin: 24px auto 48px;
+    padding: 10px;
+    text-align: center;
 }
 
 .pp{
-    line-height: 0;
     color: #8B0000;
     font-size: 18px;
 }
@@ -99,6 +114,7 @@ h1{
 
 .sanka{
     border: black;
+    text-align: center;
 }
 
 .slid{
@@ -148,7 +164,7 @@ h4{
 
 .bosyu{
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     color: red;
 }
 
@@ -162,6 +178,9 @@ h4{
     font-size: 75px;
 }
 
+.to{
+    text-align: center;
+}
 
 .content {
     display: flex;
