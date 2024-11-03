@@ -153,6 +153,21 @@ h4{
     font-size: 26px;
 }
 
+.oosirase{
+    border: 3px dashed #260036;
+    border-radius: 8px;
+    background-color: rgb(82, 197, 128);
+    width: 700px;
+    margin: 24px auto 48px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.kotti{
+    text-align: center;
+    font-size: 48px;
+}
+
 .SNS {
     font-size: 30px;
 }
