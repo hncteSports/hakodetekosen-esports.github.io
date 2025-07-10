@@ -30,7 +30,7 @@
 }
 
 .main-contents{
-    width: 80%;
+    width: 70%;
     padding: 70px;
     background-color: #ffffff;
     
@@ -39,7 +39,7 @@
 .syoukai{
     background-color: #ffffff;
     margin: auto;
-    padding: 24px;
+    padding: 36px;
 }
 
 .sidebar{
@@ -47,7 +47,7 @@
     padding: 24px;
     text-align: center;
     background-color: #ffffff;
-    width: 50%;
+    width: 30%;
 }
 
 body{
@@ -63,11 +63,24 @@ body{
 }
 
 .home-logo{
-    max-width: 300px;
+    max-width: 200px;
+    height: 20px;
     text-align: right;
 }
 
+.esp-logo{
+    max-width: 200px;
+    text-align: right;
+}
+
+.esp-logo img {
+    width: 100%;     /* 親要素（.esp-logo）の幅に合わせる */
+    height: auto;    /* 縦横比を維持 */
+    display: block;  /* 余計な余白を消す */
+  }
+
 .header{
+    max-height: 80px;
     max-width: 952px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -77,6 +90,17 @@ body{
     justify-content: space-between;
 }
 
+.header {
+    position: fixed; /* 固定表示 */
+    top: 0;          /* 画面の最上部に配置 */
+    width: 100%;     /* 横幅を画面いっぱいに */
+    z-index: 1000;   /* 他の要素より前面に表示 */
+  }
+
+  body {
+    padding-top: 60px; /* ヘッダーの高さ分だけ上に余白を作る */
+  }
+
 .banner-spase{
     text-align: center;
 }
@@ -85,10 +109,10 @@ body{
     text-align: center;
     color: #000000;
     letter-spacing: 0.3em;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: lighter;
     margin: 0;
-    padding: 12px 0;
+    padding: 0;
 }
 
 .contents-title{
@@ -119,10 +143,14 @@ body{
 .footer{
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 50px 0;
+    background-color: #008b8b	;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* フッターの上にスペースを追加 */
+    max-width: 100%;
+    bottom: 0;
 }
-
 .footer > p {
     margin: 0 24px;
 }
@@ -145,19 +173,24 @@ body{
 }
 
 .global-nav li{
+    position: relative;
     font-weight: normal;
     flex-grow: 1;
     padding: 4px;
     list-style: none;
+    flex-grow: 1;
     text-align: center;
     border-left: solid 1px #936458;
     background-color: #ffffff;
 }
 
 .global-nav a{
+    display: block;
     font-size: 14px;
     color: #000000;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
 
 .global-nav li:hover{
@@ -165,21 +198,28 @@ body{
     background-color: #af7a6d;
 }
 
-  .footer{
-    color: #dddddd;
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px; /* フッターの上にスペースを追加 */
-    width: 100%;
-    position: relative;
-    bottom: 0;
+.global-nav a:hover{
+    background: af7a6d;
+    color: white;
 }
 
 .esp-logo{
     padding: 24px;
     width: 500px;
 }
+
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 3s, transform 3s;
+}
+
+.fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -217,17 +257,41 @@ body{
         text-align: center; /* フッター内のテキストを中央に */
     }
     
-    .global-nav ul {
+    .global-nav {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto; /* 必要なら横スクロール許可 */
+        padding-left: 0px;
+        padding-right: 20px;
+      }
+      .global-nav ul {
+        width: 100%;
+        max-width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap; /* 折り返し許可ではみ出し防止 */
+        margin: 0;
         padding: 0;
-    }
+      }
+      .global-nav li {
+        flex: 1 1 0; /* 均等に幅を分配しつつ縮小も許可 */
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 4px 0;
+      }
 
-    /* ヘッダーとロゴを適切なサイズに変更 */
-    .esp-logo img {
-        width: 100px; /* ロゴのサイズ調整 */
+    .esp-logo {
+        width: 150px; /* ここで親要素の幅も指定可能 */
+        max-width: 100%;
+        padding: 12px;
+        margin: 0 auto;
+      }
+      .esp-logo img {
+        width: 150px; /* ここをお好みのサイズに */
+        max-width: 100%;
         height: auto;
-    }
+        display: block;
+        margin: 0 auto;
+      }
 
     /* フッター内の画像を小さくする */
     .footer img {
